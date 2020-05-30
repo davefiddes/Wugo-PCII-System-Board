@@ -1,0 +1,338 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 13 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:8253 IC?
+U 1 1 5F2EBEAA
+P 2800 3700
+AR Path="/5EC569ED/5F2EBEAA" Ref="IC?"  Part="1" 
+AR Path="/5F2E6CA0/5F2EBEAA" Ref="IC56"  Part="1" 
+F 0 "IC56" H 2450 4650 50  0000 C CNN
+F 1 "8253" H 3100 4650 50  0000 C CNN
+F 2 "Package_DIP:DIP-24_W15.24mm" H 2850 3950 50  0001 C CNN
+F 3 "http://www.cpcwiki.eu/imgs/e/e3/8253.pdf" H 2350 4600 50  0001 C CNN
+	1    2800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male SPK
+U 1 1 5F2EBFC8
+P 8200 2100
+F 0 "SPK" H 8172 2074 50  0000 R CNN
+F 1 "SPEAKER" H 8172 1983 50  0000 R CNN
+F 2 "" H 8200 2100 50  0001 C CNN
+F 3 "~" H 8200 2100 50  0001 C CNN
+	1    8200 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F2ECC14
+P 7800 1850
+F 0 "#PWR?" H 7800 1700 50  0001 C CNN
+F 1 "+5V" H 7815 2023 50  0000 C CNN
+F 2 "" H 7800 1850 50  0001 C CNN
+F 3 "" H 7800 1850 50  0001 C CNN
+	1    7800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2300 7800 2300
+Wire Wire Line
+	7800 2300 7800 2100
+Wire Wire Line
+	8000 2100 7800 2100
+Connection ~ 7800 2100
+Wire Wire Line
+	7800 2100 7800 1850
+$Comp
+L power:GND #PWR?
+U 1 1 5F2ED3A7
+P 7900 2450
+F 0 "#PWR?" H 7900 2200 50  0001 C CNN
+F 1 "GND" H 7905 2277 50  0000 C CNN
+F 2 "" H 7900 2450 50  0001 C CNN
+F 3 "" H 7900 2450 50  0001 C CNN
+	1    7900 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2200 7900 2200
+Wire Wire Line
+	7900 2200 7900 2400
+$Comp
+L Device:R R28
+U 1 1 5F2ED91A
+P 7450 2000
+F 0 "R28" V 7243 2000 50  0000 C CNN
+F 1 "10R" V 7334 2000 50  0000 C CNN
+F 2 "" V 7380 2000 50  0001 C CNN
+F 3 "~" H 7450 2000 50  0001 C CNN
+	1    7450 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 2000 7600 2000
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 5F2EDECD
+P 6400 2200
+F 0 "Q1" H 6590 2246 50  0000 L CNN
+F 1 "2N3904" H 6590 2155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6600 2125 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6400 2200 50  0001 L CNN
+	1    6400 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2400 7050 2400
+Connection ~ 7900 2400
+Wire Wire Line
+	7900 2400 7900 2450
+Wire Wire Line
+	6500 2000 7050 2000
+$Comp
+L Device:C C24
+U 1 1 5F2EF404
+P 7050 2200
+F 0 "C24" H 7165 2246 50  0000 L CNN
+F 1 "100nF" H 7165 2155 50  0000 L CNN
+F 2 "" H 7088 2050 50  0001 C CNN
+F 3 "~" H 7050 2200 50  0001 C CNN
+	1    7050 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2000 7050 2050
+Connection ~ 7050 2000
+Wire Wire Line
+	7050 2000 7300 2000
+Wire Wire Line
+	7050 2350 7050 2400
+Connection ~ 7050 2400
+Wire Wire Line
+	7050 2400 6500 2400
+$Comp
+L Device:R R24
+U 1 1 5F2F0D4F
+P 6050 2050
+F 0 "R24" H 5980 2004 50  0000 R CNN
+F 1 "4K7" H 5980 2095 50  0000 R CNN
+F 2 "" V 5980 2050 50  0001 C CNN
+F 3 "~" H 6050 2050 50  0001 C CNN
+	1    6050 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 2200 6200 2200
+$Comp
+L 74xx:74LS00 IC84
+U 3 1 5F2F4453
+P 5550 2200
+F 0 "IC84" H 5550 2525 50  0000 C CNN
+F 1 "74LS00" H 5550 2434 50  0000 C CNN
+F 2 "" H 5550 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5550 2200 50  0001 C CNN
+	3    5550 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2200 6050 2200
+Connection ~ 6050 2200
+Text Label 2000 3900 0    50   ~ 0
+~XIOR~
+Text Label 2000 4000 0    50   ~ 0
+~XIOW~
+Text Label 2000 3000 0    50   ~ 0
+XD0
+Text Label 2000 3100 0    50   ~ 0
+XD1
+Text Label 2000 3200 0    50   ~ 0
+XD2
+Text Label 2000 3300 0    50   ~ 0
+XD3
+Text Label 2000 3400 0    50   ~ 0
+XD4
+Text Label 2000 3500 0    50   ~ 0
+XD5
+Text Label 2000 3600 0    50   ~ 0
+XD6
+Text Label 2000 3700 0    50   ~ 0
+XD7
+Wire Wire Line
+	2000 3000 2200 3000
+Wire Wire Line
+	2000 3100 2200 3100
+Wire Wire Line
+	2000 3200 2200 3200
+Wire Wire Line
+	2000 3300 2200 3300
+Wire Wire Line
+	2000 3400 2200 3400
+Wire Wire Line
+	2000 3500 2200 3500
+Wire Wire Line
+	2000 3600 2200 3600
+Wire Wire Line
+	2000 3700 2200 3700
+Wire Wire Line
+	2000 3900 2200 3900
+Wire Wire Line
+	2000 4000 2200 4000
+Wire Wire Line
+	2000 4100 2200 4100
+Wire Wire Line
+	2000 4200 2200 4200
+Text Label 2000 4100 0    50   ~ 0
+XA0
+Text Label 2000 4200 0    50   ~ 0
+XA1
+Text Label 1800 4400 0    50   ~ 0
+~TIMER_CS~
+Wire Wire Line
+	1800 4400 2200 4400
+Wire Wire Line
+	4250 3300 3400 3300
+Text Label 4250 3300 2    50   ~ 0
+IRQ0
+Wire Wire Line
+	3400 3700 3550 3700
+Wire Wire Line
+	3550 3700 3550 3200
+Wire Wire Line
+	3550 2700 2800 2700
+Wire Wire Line
+	3400 3200 3550 3200
+Connection ~ 3550 3200
+Wire Wire Line
+	3550 3200 3550 2700
+Wire Wire Line
+	3400 3100 3700 3100
+Wire Wire Line
+	3400 3600 3700 3600
+Wire Wire Line
+	3700 3600 3700 3100
+Connection ~ 3700 3100
+Wire Wire Line
+	3700 3100 4250 3100
+Wire Wire Line
+	3700 3600 3700 4100
+Wire Wire Line
+	3700 4100 3400 4100
+Connection ~ 3700 3600
+Text Label 4250 3100 2    50   ~ 0
+TIMER_CLOCK
+Text GLabel 7200 3700 2    50   Output ~ 0
+DREQ0
+Text Notes 6200 4350 0    50   ~ 0
+DMA memory refresh tick
+Wire Wire Line
+	6700 3700 7200 3700
+Wire Wire Line
+	6400 4200 6000 4200
+Wire Wire Line
+	6400 4100 6400 4200
+Text GLabel 6000 4200 0    50   Input ~ 0
+~DACK0~
+NoConn ~ 6700 3900
+Wire Wire Line
+	6100 3700 6100 3500
+Wire Wire Line
+	6100 3500 6400 3500
+$Comp
+L 74xx:74LS74 IC?
+U 1 1 5F38B815
+P 6400 3800
+AR Path="/5EC54617/5F38B815" Ref="IC?"  Part="1" 
+AR Path="/5F2E6CA0/5F38B815" Ref="IC69"  Part="1" 
+F 0 "IC69" H 6200 4150 50  0000 C CNN
+F 1 "74LS74" H 6650 4100 50  0000 C CNN
+F 2 "" H 6400 3800 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 6400 3800 50  0001 C CNN
+	1    6400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F38DC92
+P 6400 3400
+F 0 "#PWR?" H 6400 3250 50  0001 C CNN
+F 1 "+5V" H 6415 3573 50  0000 C CNN
+F 2 "" H 6400 3400 50  0001 C CNN
+F 3 "" H 6400 3400 50  0001 C CNN
+	1    6400 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3400 6400 3500
+Connection ~ 6400 3500
+$Comp
+L power:+5V #PWR?
+U 1 1 5F3919C0
+P 2800 2600
+F 0 "#PWR?" H 2800 2450 50  0001 C CNN
+F 1 "+5V" H 2815 2773 50  0000 C CNN
+F 2 "" H 2800 2600 50  0001 C CNN
+F 3 "" H 2800 2600 50  0001 C CNN
+	1    2800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2600 2800 2700
+Connection ~ 2800 2700
+Text Label 4350 4200 2    50   ~ 0
+TIMER2_GATE_SPEAKER
+Wire Wire Line
+	3400 4200 4350 4200
+$Comp
+L 74xx:74LS00 IC84
+U 4 1 5F3BB5DE
+P 4400 4850
+F 0 "IC84" H 4400 5175 50  0000 C CNN
+F 1 "74LS00" H 4400 5084 50  0000 C CNN
+F 2 "" H 4400 4850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 4400 4850 50  0001 C CNN
+	4    4400 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4300 3800 4300
+Wire Wire Line
+	3800 4300 3800 4750
+Wire Wire Line
+	3800 4750 4100 4750
+Wire Wire Line
+	3400 3800 6100 3800
+Wire Wire Line
+	4700 4850 5000 4850
+Wire Wire Line
+	5250 2100 5250 2200
+Wire Wire Line
+	5250 2200 5000 2200
+Connection ~ 5250 2200
+Wire Wire Line
+	5250 2200 5250 2300
+Wire Wire Line
+	5000 2200 5000 4850
+Text Label 3500 4950 0    50   ~ 0
+SPEAKER_DATA
+Wire Wire Line
+	3500 4950 4100 4950
+Text Label 4350 4300 2    50   ~ 0
+TIMER2_OUT
+Wire Wire Line
+	3800 4300 4350 4300
+Connection ~ 3800 4300
+$EndSCHEMATC

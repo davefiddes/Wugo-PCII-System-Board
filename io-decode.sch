@@ -1,0 +1,491 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS32 IC?
+U 2 1 5F459B76
+P 4900 2250
+AR Path="/5EC54617/5F459B76" Ref="IC?"  Part="2" 
+AR Path="/5F458923/5F459B76" Ref="IC83"  Part="2" 
+F 0 "IC83" H 4900 2575 50  0000 C CNN
+F 1 "74LS32" H 4900 2484 50  0000 C CNN
+F 2 "" H 4900 2250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4900 2250 50  0001 C CNN
+	2    4900 2250
+	1    0    0    -1  
+$EndComp
+Text Label 5850 2250 2    50   ~ 0
+~DMA_PAGE_CS~
+Wire Wire Line
+	5850 2250 5200 2250
+Wire Wire Line
+	4200 2150 4600 2150
+Text Label 4200 2150 0    50   ~ 0
+~XIOW~
+$Comp
+L 74xx:74LS138 IC82
+U 1 1 5F45B402
+P 2750 2250
+F 0 "IC82" H 2750 3031 50  0000 C CNN
+F 1 "74LS138" H 2750 2940 50  0000 C CNN
+F 2 "" H 2750 2250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 2750 2250 50  0001 C CNN
+	1    2750 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2350 4600 2350
+Text Label 2050 1950 0    50   ~ 0
+XA5
+Text Label 2050 2050 0    50   ~ 0
+XA6
+Text Label 2050 2650 0    50   ~ 0
+XA9
+Text Label 2050 2550 0    50   ~ 0
+XA8
+Text Label 2050 2450 0    50   ~ 0
+~AEN~
+Text Label 2050 2150 0    50   ~ 0
+XA7
+Wire Wire Line
+	2050 1950 2250 1950
+Wire Wire Line
+	2050 2050 2250 2050
+Wire Wire Line
+	2050 2150 2250 2150
+Wire Wire Line
+	2050 2450 2250 2450
+Wire Wire Line
+	2050 2550 2250 2550
+Wire Wire Line
+	2050 2650 2250 2650
+$Comp
+L 74xx:74LS32 IC?
+U 3 1 5EFBEC88
+P 4900 2850
+AR Path="/5EC54617/5EFBEC88" Ref="IC?"  Part="2" 
+AR Path="/5F458923/5EFBEC88" Ref="IC83"  Part="3" 
+F 0 "IC83" H 4900 3175 50  0000 C CNN
+F 1 "74LS32" H 4900 3084 50  0000 C CNN
+F 2 "" H 4900 2850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4900 2850 50  0001 C CNN
+	3    4900 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2450 4200 2450
+Wire Wire Line
+	4200 2450 4200 2750
+Wire Wire Line
+	4200 2750 4600 2750
+Wire Wire Line
+	4200 2950 4600 2950
+Text Label 4200 2950 0    50   ~ 0
+~XIOW~
+Text Label 5850 2850 2    50   ~ 0
+~NMI_ENABLE_CS~
+Wire Wire Line
+	5850 2850 5200 2850
+$Comp
+L 74xx:74LS21 IC27
+U 1 1 5EFC2153
+P 7150 5300
+F 0 "IC27" H 7150 5675 50  0000 C CNN
+F 1 "74LS21" H 7150 5584 50  0000 C CNN
+F 2 "" H 7150 5300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS21" H 7150 5300 50  0001 C CNN
+	1    7150 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS21 IC27
+U 2 1 5EFC56AB
+P 7150 6250
+F 0 "IC27" H 7150 6625 50  0000 C CNN
+F 1 "74LS27" H 7150 6534 50  0000 C CNN
+F 2 "" H 7150 6250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 7150 6250 50  0001 C CNN
+	2    7150 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 5450 6150 5450
+Wire Wire Line
+	6150 5450 6150 5050
+Wire Wire Line
+	6150 5050 5650 5050
+$Comp
+L 74xx:74LS138 IC26
+U 1 1 5EFF6C23
+P 5150 5350
+F 0 "IC26" H 5150 6131 50  0000 C CNN
+F 1 "74LS138" H 5150 6040 50  0000 C CNN
+F 2 "" H 5150 5350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 5150 5350 50  0001 C CNN
+	1    5150 5350
+	1    0    0    -1  
+$EndComp
+Text Label 3900 1950 2    50   ~ 0
+~DMA_CS~
+Wire Wire Line
+	3900 1950 3250 1950
+Text Label 4400 5050 0    50   ~ 0
+XA13
+Text Label 4400 5150 0    50   ~ 0
+XA14
+Text Label 4400 5250 0    50   ~ 0
+XA15
+Text Label 4350 5750 0    50   ~ 0
+~XMEMR~
+$Comp
+L 74xx:74LS20 IC28
+U 2 1 5F00369A
+P 1550 5350
+F 0 "IC28" H 1550 5725 50  0000 C CNN
+F 1 "74LS20" H 1550 5634 50  0000 C CNN
+F 2 "" H 1550 5350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 1550 5350 50  0001 C CNN
+	2    1550 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5750 4650 5750
+$Comp
+L power:+5V #PWR?
+U 1 1 5F0081C8
+P 4550 5550
+F 0 "#PWR?" H 4550 5400 50  0001 C CNN
+F 1 "+5V" H 4565 5723 50  0000 C CNN
+F 2 "" H 4550 5550 50  0001 C CNN
+F 3 "" H 4550 5550 50  0001 C CNN
+	1    4550 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5550 4550 5550
+Text Label 950  5200 0    50   ~ 0
+XA19
+Text Label 950  5300 0    50   ~ 0
+XA18
+Text Label 950  5400 0    50   ~ 0
+XA17
+Text Label 950  5500 0    50   ~ 0
+XA16
+Wire Wire Line
+	950  5200 1250 5200
+Wire Wire Line
+	950  5300 1250 5300
+Wire Wire Line
+	950  5400 1250 5400
+Wire Wire Line
+	950  5500 1250 5500
+Wire Wire Line
+	4400 5050 4650 5050
+Wire Wire Line
+	4400 5150 4650 5150
+Wire Wire Line
+	4400 5250 4650 5250
+Wire Wire Line
+	6050 6100 6850 6100
+Wire Wire Line
+	5750 6300 5750 5450
+Wire Wire Line
+	5750 5450 5650 5450
+$Comp
+L power:+5V #PWR?
+U 1 1 5ECB105F
+P 5600 6400
+F 0 "#PWR?" H 5600 6250 50  0001 C CNN
+F 1 "+5V" H 5615 6573 50  0000 C CNN
+F 2 "" H 5600 6400 50  0001 C CNN
+F 3 "" H 5600 6400 50  0001 C CNN
+	1    5600 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5550 6050 5550
+Wire Wire Line
+	6050 5550 6050 6100
+Wire Wire Line
+	5650 5650 5900 5650
+Wire Wire Line
+	5900 5650 5900 6200
+Text Label 8100 5750 2    50   ~ 0
+~BIOS_CS~
+Wire Wire Line
+	8100 5750 5650 5750
+Text Label 8100 5300 2    50   ~ 0
+~EXTRA_ROM1_CS~
+Text Label 8100 6250 2    50   ~ 0
+~EXTRA_ROM2_CS~
+Wire Wire Line
+	8100 6250 7450 6250
+Wire Wire Line
+	5650 5350 6850 5350
+Wire Wire Line
+	5650 5250 5850 5250
+Wire Wire Line
+	5650 5150 5750 5150
+Wire Wire Line
+	7450 5300 8100 5300
+Wire Wire Line
+	5900 6200 6850 6200
+Wire Wire Line
+	5750 6300 6850 6300
+Wire Wire Line
+	5600 6400 6850 6400
+Text Notes 4450 4450 0    50   ~ 0
+ROM Memory Map\n0xF0000-0xF3FFF Extra ROM1\n0xF4000-0xF7FFF Extra ROM2\n0xF8000-0xFFFFF BIOS
+Text Label 3900 2050 2    50   ~ 0
+~INT_CS~
+Wire Wire Line
+	3900 2050 3250 2050
+Text Label 3900 2150 2    50   ~ 0
+~TIMER_CS~
+Wire Wire Line
+	3900 2150 3250 2150
+Text Label 3900 2250 2    50   ~ 0
+~PPI_CS~
+Wire Wire Line
+	3900 2250 3250 2250
+$Comp
+L 74xx:74LS02 IC25
+U 4 1 5ED358D6
+P 4900 3450
+F 0 "IC25" H 4900 3133 50  0000 C CNN
+F 1 "74LS02" H 4900 3224 50  0000 C CNN
+F 2 "" H 4900 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 4900 3450 50  0001 C CNN
+	4    4900 3450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3250 2650 3250 3350
+Text Label 3900 2550 2    50   ~ 0
+???
+Wire Wire Line
+	3900 2550 3250 2550
+Wire Wire Line
+	4200 3550 4600 3550
+Text Label 4200 3550 0    50   ~ 0
+~XIOW~
+Wire Wire Line
+	3250 3350 4600 3350
+Text Notes 1650 3650 0    50   ~ 0
+IO Map\n0x0000-0x001F DMA\n0x0020-0x003F Interrupt Controller\n0x0040-0x005F Timer\n0x0060-0x007F Keyboard/Config PPI\n0x0080-0x009F DMA Page Register\n0x00A0-0x00BF NMI Enable\n0x00C0-0x00DF Something\n0x00E0-0x00FF Memory Bank Switch
+Text Label 5850 3450 2    50   ~ 0
+~MEM_BANK_CS~
+Wire Wire Line
+	5850 3450 5200 3450
+$Comp
+L 74xx:74LS27 IC?
+U 1 1 5ED81211
+P 6600 4300
+AR Path="/5F04B123/5ED81211" Ref="IC?"  Part="1" 
+AR Path="/5F458923/5ED81211" Ref="IC27"  Part="1" 
+F 0 "IC27" H 6600 4625 50  0000 C CNN
+F 1 "74LS27" H 6600 4534 50  0000 C CNN
+F 2 "" H 6600 4300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 6600 4300 50  0001 C CNN
+	1    6600 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4200 5750 4200
+Wire Wire Line
+	5750 4200 5750 5150
+Connection ~ 5750 5150
+Wire Wire Line
+	5750 5150 6850 5150
+Wire Wire Line
+	6300 4300 5850 4300
+Wire Wire Line
+	5850 4300 5850 5250
+Connection ~ 5850 5250
+Wire Wire Line
+	5850 5250 6850 5250
+$Comp
+L power:+5V #PWR?
+U 1 1 5ED8D293
+P 6200 4100
+F 0 "#PWR?" H 6200 3950 50  0001 C CNN
+F 1 "+5V" H 6215 4273 50  0000 C CNN
+F 2 "" H 6200 4100 50  0001 C CNN
+F 3 "" H 6200 4100 50  0001 C CNN
+	1    6200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4400 6200 4400
+Wire Wire Line
+	6200 4400 6200 4100
+$Comp
+L 74xx:74LS27 IC?
+U 3 1 5EDCBBC4
+P 3050 6750
+AR Path="/5F04B123/5EDCBBC4" Ref="IC?"  Part="3" 
+AR Path="/5F458923/5EDCBBC4" Ref="IC29"  Part="3" 
+F 0 "IC29" H 3050 7075 50  0000 C CNN
+F 1 "74LS27" H 3050 6984 50  0000 C CNN
+F 2 "" H 3050 6750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 3050 6750 50  0001 C CNN
+	3    3050 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6750 3350 6750
+Text Label 3800 6750 2    50   ~ 0
+XBUS_IN
+$Comp
+L 74xx:74LS27 IC?
+U 2 1 5EDCBBCC
+P 1950 6650
+AR Path="/5F04B123/5EDCBBCC" Ref="IC?"  Part="2" 
+AR Path="/5F458923/5EDCBBCC" Ref="IC29"  Part="2" 
+F 0 "IC29" H 1950 6975 50  0000 C CNN
+F 1 "74LS27" H 1950 6884 50  0000 C CNN
+F 2 "" H 1950 6650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS27" H 1950 6650 50  0001 C CNN
+	2    1950 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6650 2750 6650
+Text Label 1300 6550 0    50   ~ 0
+~XIOR~
+Wire Wire Line
+	1300 6550 1650 6550
+Text Label 1300 6650 0    50   ~ 0
+XA8
+Text Label 1300 6750 0    50   ~ 0
+XA9
+Wire Wire Line
+	1300 6650 1650 6650
+Wire Wire Line
+	1300 6750 1650 6750
+$Comp
+L 74xx:74LS02 IC?
+U 2 1 5EDCBBD9
+P 2350 6050
+AR Path="/5F04B123/5EDCBBD9" Ref="IC?"  Part="2" 
+AR Path="/5F458923/5EDCBBD9" Ref="IC25"  Part="2" 
+F 0 "IC25" H 2350 6375 50  0000 C CNN
+F 1 "74LS02" H 2350 6284 50  0000 C CNN
+F 2 "" H 2350 6050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 2350 6050 50  0001 C CNN
+	2    2350 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 6750 2650 6750
+Text Label 1700 6150 0    50   ~ 0
+~XMEMR~
+Wire Wire Line
+	1700 6150 2050 6150
+$Comp
+L 74xx:74LS20 IC?
+U 1 1 5EDCBBE7
+P 1650 7350
+AR Path="/5F04B123/5EDCBBE7" Ref="IC?"  Part="1" 
+AR Path="/5F458923/5EDCBBE7" Ref="IC28"  Part="1" 
+F 0 "IC28" H 1650 7725 50  0000 C CNN
+F 1 "74LS20" H 1650 7634 50  0000 C CNN
+F 2 "" H 1650 7350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 1650 7350 50  0001 C CNN
+	1    1650 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5EDCBBEF
+P 1200 6950
+AR Path="/5F04B123/5EDCBBEF" Ref="#PWR?"  Part="1" 
+AR Path="/5F458923/5EDCBBEF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1200 6800 50  0001 C CNN
+F 1 "+5V" H 1215 7123 50  0000 C CNN
+F 2 "" H 1200 6950 50  0001 C CNN
+F 3 "" H 1200 6950 50  0001 C CNN
+	1    1200 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 7200 1200 7200
+Wire Wire Line
+	1350 7300 1200 7300
+Wire Wire Line
+	1200 6950 1200 7000
+Connection ~ 1200 7200
+Wire Wire Line
+	1200 7200 1200 7300
+Wire Wire Line
+	2650 6050 2650 6750
+Wire Wire Line
+	1850 5350 1950 5350
+Wire Wire Line
+	3600 5350 3600 5650
+Wire Wire Line
+	3600 5650 4650 5650
+Wire Wire Line
+	1950 5350 1950 5950
+Wire Wire Line
+	1950 5950 2050 5950
+Connection ~ 1950 5350
+Wire Wire Line
+	1950 5350 3600 5350
+Wire Wire Line
+	2400 6850 2400 7350
+Wire Wire Line
+	2400 7350 1950 7350
+Wire Wire Line
+	2400 6850 2750 6850
+$Comp
+L Device:R R11
+U 1 1 5FA31F04
+P 900 7150
+F 0 "R11" H 970 7196 50  0000 L CNN
+F 1 "4K7" H 970 7105 50  0000 L CNN
+F 2 "" V 830 7150 50  0001 C CNN
+F 3 "~" H 900 7150 50  0001 C CNN
+	1    900  7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 7400 900  7400
+Wire Wire Line
+	900  7400 900  7300
+Wire Wire Line
+	900  7000 1200 7000
+Connection ~ 1200 7000
+Wire Wire Line
+	1200 7000 1200 7200
+Text Label 600  7400 0    50   ~ 0
+~0WS~
+Wire Wire Line
+	600  7400 900  7400
+Connection ~ 900  7400
+Wire Wire Line
+	600  7500 1350 7500
+Text Label 600  7500 0    50   ~ 0
+~INTA~
+Wire Wire Line
+	6900 4300 6900 4650
+Wire Wire Line
+	6900 4650 6000 4650
+Wire Wire Line
+	6000 4650 6000 5450
+Wire Wire Line
+	6000 5450 5750 5450
+Connection ~ 5750 5450
+$EndSCHEMATC
