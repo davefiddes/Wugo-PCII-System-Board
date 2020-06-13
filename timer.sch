@@ -3,8 +3,8 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 13
-Title ""
+Sheet 13 16
+Title "Wugo PCII System Board"
 Date ""
 Rev ""
 Comp ""
@@ -27,10 +27,10 @@ F 3 "http://www.cpcwiki.eu/imgs/e/e3/8253.pdf" H 2350 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Male SPK
+L Connector:Conn_01x04_Male SPK1
 U 1 1 5F2EBFC8
 P 8200 2100
-F 0 "SPK" H 8172 2074 50  0000 R CNN
+F 0 "SPK1" H 8172 2074 50  0000 R CNN
 F 1 "SPEAKER" H 8172 1983 50  0000 R CNN
 F 2 "" H 8200 2100 50  0001 C CNN
 F 3 "~" H 8200 2100 50  0001 C CNN
@@ -38,10 +38,10 @@ F 3 "~" H 8200 2100 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR086
 U 1 1 5F2ECC14
 P 7800 1850
-F 0 "#PWR?" H 7800 1700 50  0001 C CNN
+F 0 "#PWR086" H 7800 1700 50  0001 C CNN
 F 1 "+5V" H 7815 2023 50  0000 C CNN
 F 2 "" H 7800 1850 50  0001 C CNN
 F 3 "" H 7800 1850 50  0001 C CNN
@@ -58,10 +58,10 @@ Connection ~ 7800 2100
 Wire Wire Line
 	7800 2100 7800 1850
 $Comp
-L power:GND #PWR?
+L power:GND #PWR087
 U 1 1 5F2ED3A7
 P 7900 2450
-F 0 "#PWR?" H 7900 2200 50  0001 C CNN
+F 0 "#PWR087" H 7900 2200 50  0001 C CNN
 F 1 "GND" H 7905 2277 50  0000 C CNN
 F 2 "" H 7900 2450 50  0001 C CNN
 F 3 "" H 7900 2450 50  0001 C CNN
@@ -151,10 +151,6 @@ $EndComp
 Wire Wire Line
 	5850 2200 6050 2200
 Connection ~ 6050 2200
-Text Label 2000 3900 0    50   ~ 0
-~XIOR~
-Text Label 2000 4000 0    50   ~ 0
-~XIOW~
 Text Label 2000 3000 0    50   ~ 0
 XD0
 Text Label 2000 3100 0    50   ~ 0
@@ -188,7 +184,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 3700 2200 3700
 Wire Wire Line
-	2000 3900 2200 3900
+	1750 3900 2200 3900
 Wire Wire Line
 	2000 4000 2200 4000
 Wire Wire Line
@@ -199,14 +195,8 @@ Text Label 2000 4100 0    50   ~ 0
 XA0
 Text Label 2000 4200 0    50   ~ 0
 XA1
-Text Label 1800 4400 0    50   ~ 0
-~TIMER_CS~
-Wire Wire Line
-	1800 4400 2200 4400
 Wire Wire Line
 	4250 3300 3400 3300
-Text Label 4250 3300 2    50   ~ 0
-IRQ0
 Wire Wire Line
 	3400 3700 3550 3700
 Wire Wire Line
@@ -232,10 +222,8 @@ Wire Wire Line
 Wire Wire Line
 	3700 4100 3400 4100
 Connection ~ 3700 3600
-Text Label 4250 3100 2    50   ~ 0
-TIMER_CLOCK
 Text GLabel 7200 3700 2    50   Output ~ 0
-DREQ0
+DRQ0
 Text Notes 6200 4350 0    50   ~ 0
 DMA memory refresh tick
 Wire Wire Line
@@ -265,10 +253,10 @@ F 3 "74xx/74hc_hct74.pdf" H 6400 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR085
 U 1 1 5F38DC92
 P 6400 3400
-F 0 "#PWR?" H 6400 3250 50  0001 C CNN
+F 0 "#PWR085" H 6400 3250 50  0001 C CNN
 F 1 "+5V" H 6415 3573 50  0000 C CNN
 F 2 "" H 6400 3400 50  0001 C CNN
 F 3 "" H 6400 3400 50  0001 C CNN
@@ -279,10 +267,10 @@ Wire Wire Line
 	6400 3400 6400 3500
 Connection ~ 6400 3500
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR084
 U 1 1 5F3919C0
 P 2800 2600
-F 0 "#PWR?" H 2800 2450 50  0001 C CNN
+F 0 "#PWR084" H 2800 2450 50  0001 C CNN
 F 1 "+5V" H 2815 2773 50  0000 C CNN
 F 2 "" H 2800 2600 50  0001 C CNN
 F 3 "" H 2800 2600 50  0001 C CNN
@@ -292,10 +280,8 @@ $EndComp
 Wire Wire Line
 	2800 2600 2800 2700
 Connection ~ 2800 2700
-Text Label 4350 4200 2    50   ~ 0
-TIMER2_GATE_SPEAKER
 Wire Wire Line
-	3400 4200 4350 4200
+	3400 4200 3950 4200
 $Comp
 L 74xx:74LS00 IC84
 U 4 1 5F3BB5DE
@@ -326,13 +312,75 @@ Wire Wire Line
 	5250 2200 5250 2300
 Wire Wire Line
 	5000 2200 5000 4850
-Text Label 3500 4950 0    50   ~ 0
-SPEAKER_DATA
 Wire Wire Line
-	3500 4950 4100 4950
-Text Label 4350 4300 2    50   ~ 0
-TIMER2_OUT
+	3950 4950 4100 4950
 Wire Wire Line
-	3800 4300 4350 4300
+	3800 4300 3950 4300
 Connection ~ 3800 4300
+Text GLabel 1800 4400 0    50   Input ~ 0
+~TIMER_CS~
+Text GLabel 1750 3900 0    50   Input ~ 0
+~XIOR~
+Text GLabel 2000 4000 0    50   Input ~ 0
+~XIOW~
+Entry Wire Line
+	1900 4300 2000 4200
+Entry Wire Line
+	1900 4200 2000 4100
+Wire Wire Line
+	1800 4400 2200 4400
+Wire Bus Line
+	1900 4200 1900 4300
+Wire Bus Line
+	1900 4300 1350 4300
+Text GLabel 1350 4300 0    50   Input ~ 0
+XA[0..19]
+Entry Wire Line
+	1900 2900 2000 3000
+Entry Wire Line
+	1900 3000 2000 3100
+Entry Wire Line
+	1900 3100 2000 3200
+Entry Wire Line
+	1900 3200 2000 3300
+Entry Wire Line
+	1900 3300 2000 3400
+Entry Wire Line
+	1900 3400 2000 3500
+Entry Wire Line
+	1900 3500 2000 3600
+Entry Wire Line
+	1900 3600 2000 3700
+Wire Bus Line
+	1900 2750 1350 2750
+Text GLabel 1350 2750 0    50   3State ~ 0
+XD[0..7]
+$Comp
+L power:GND #PWR0137
+U 1 1 61391A6C
+P 2800 4750
+F 0 "#PWR0137" H 2800 4500 50  0001 C CNN
+F 1 "GND" H 2805 4577 50  0000 C CNN
+F 2 "" H 2800 4750 50  0001 C CNN
+F 3 "" H 2800 4750 50  0001 C CNN
+	1    2800 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4700 2800 4750
+NoConn ~ 6050 1900
+Text Notes 5750 1800 0    50   ~ 0
+This makes no sense and appears \nto be a tracking error
+Text GLabel 4250 3100 2    50   Input ~ 0
+TIMER_CLOCK
+Text GLabel 4250 3300 2    50   Output ~ 0
+IRQ0
+Text GLabel 3950 4200 2    50   Input ~ 0
+TIMER2_GATE_SPEAKER
+Text GLabel 3950 4300 2    50   Output ~ 0
+TIMER2_OUT
+Text GLabel 3950 4950 0    50   Input ~ 0
+SPEAKER_DATA
+Wire Bus Line
+	1900 2750 1900 3600
 $EndSCHEMATC

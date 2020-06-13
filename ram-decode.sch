@@ -3,8 +3,8 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 13
-Title ""
+Sheet 12 16
+Title "Wugo PCII System Board"
 Date ""
 Rev ""
 Comp ""
@@ -32,8 +32,8 @@ U 1 1 5ED7C30E
 P 6400 1550
 AR Path="/5F458923/5ED7C30E" Ref="IC?"  Part="1" 
 AR Path="/5ED7BC4B/5ED7C30E" Ref="IC99"  Part="1" 
-F 0 "IC99" H 6400 2331 50  0000 C CNN
-F 1 "74LS138" H 6400 2240 50  0000 C CNN
+F 0 "IC99" H 6150 2050 50  0000 C CNN
+F 1 "74LS138" H 6700 2050 50  0000 C CNN
 F 2 "" H 6400 1550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 6400 1550 50  0001 C CNN
 	1    6400 1550
@@ -43,8 +43,8 @@ $Comp
 L PCII-System-Board-Custom-Parts:TBP24S10 IC100
 U 1 1 5ED7EC27
 P 4450 2900
-F 0 "IC100" H 4450 3781 50  0000 C CNN
-F 1 "TBP24S10" H 4450 3690 50  0000 C CNN
+F 0 "IC100" H 4200 3600 50  0000 C CNN
+F 1 "TBP24S10" H 4700 3600 50  0000 C CNN
 F 2 "" H 4450 2900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 4450 2900 50  0001 C CNN
 	1    4450 2900
@@ -73,10 +73,10 @@ Wire Wire Line
 Wire Wire Line
 	3900 3600 4450 3600
 $Comp
-L power:GND #PWR?
+L power:GND #PWR079
 U 1 1 5ED82346
 P 4450 3650
-F 0 "#PWR?" H 4450 3400 50  0001 C CNN
+F 0 "#PWR079" H 4450 3400 50  0001 C CNN
 F 1 "GND" H 4455 3477 50  0000 C CNN
 F 2 "" H 4450 3650 50  0001 C CNN
 F 3 "" H 4450 3650 50  0001 C CNN
@@ -104,10 +104,10 @@ Wire Wire Line
 Wire Wire Line
 	4750 3100 5250 3100
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR080
 U 1 1 5ED90218
 P 5750 2650
-F 0 "#PWR?" H 5750 2500 50  0001 C CNN
+F 0 "#PWR080" H 5750 2500 50  0001 C CNN
 F 1 "+5V" H 5765 2823 50  0000 C CNN
 F 2 "" H 5750 2650 50  0001 C CNN
 F 3 "" H 5750 2650 50  0001 C CNN
@@ -119,10 +119,10 @@ Wire Wire Line
 Wire Wire Line
 	5750 3200 5750 2700
 $Comp
-L power:GND #PWR?
+L power:GND #PWR082
 U 1 1 5ED910A9
 P 6400 4050
-F 0 "#PWR?" H 6400 3800 50  0001 C CNN
+F 0 "#PWR082" H 6400 3800 50  0001 C CNN
 F 1 "GND" H 6405 3877 50  0000 C CNN
 F 2 "" H 6400 4050 50  0001 C CNN
 F 3 "" H 6400 4050 50  0001 C CNN
@@ -149,20 +149,12 @@ Wire Wire Line
 Connection ~ 5750 2700
 Wire Wire Line
 	5750 2700 5750 2650
-Text Label 7200 1550 2    50   ~ 0
-~CAS3~
-Text Label 7200 1450 2    50   ~ 0
-~CAS2~
-Text Label 7200 1350 2    50   ~ 0
-~CAS1~
-Text Label 7200 1250 2    50   ~ 0
-~CAS0~
 Wire Wire Line
-	6900 1250 7200 1250
+	6900 1250 7550 1250
 Wire Wire Line
 	6900 1350 7200 1350
 Wire Wire Line
-	6900 1450 7200 1450
+	6900 1450 7550 1450
 Wire Wire Line
 	6900 1550 7200 1550
 Wire Wire Line
@@ -255,14 +247,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 3900 7550 3900
 Connection ~ 7400 3350
-Text Label 8450 3800 2    50   ~ 0
-~RAS3~
-Text Label 8450 3250 2    50   ~ 0
-~RAS2~
-Text Label 8450 2650 2    50   ~ 0
-~RAS1~
-Text Label 8450 2050 2    50   ~ 0
-~RAS0~
 Wire Wire Line
 	8150 2050 8450 2050
 Wire Wire Line
@@ -277,48 +261,48 @@ Connection ~ 7400 3900
 $Comp
 L 74xx:74LS125 IC102
 U 1 1 5EDD084B
-P 1050 5100
-F 0 "IC102" H 1050 5417 50  0000 C CNN
-F 1 "74LS125" H 1050 5326 50  0000 C CNN
-F 2 "" H 1050 5100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 1050 5100 50  0001 C CNN
-	1    1050 5100
+P 10550 1550
+F 0 "IC102" H 10550 1867 50  0000 C CNN
+F 1 "74LS125" H 10550 1776 50  0000 C CNN
+F 2 "" H 10550 1550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 10550 1550 50  0001 C CNN
+	1    10550 1550
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS125 U102
+L 74xx:74LS125 IC102
 U 2 1 5EDD0F05
-P 1000 5850
-F 0 "U102" H 1000 6167 50  0000 C CNN
-F 1 "74LS125" H 1000 6076 50  0000 C CNN
-F 2 "" H 1000 5850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 1000 5850 50  0001 C CNN
-	2    1000 5850
+P 10500 2300
+F 0 "IC102" H 10500 2617 50  0000 C CNN
+F 1 "74LS125" H 10500 2526 50  0000 C CNN
+F 2 "" H 10500 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 10500 2300 50  0001 C CNN
+	2    10500 2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS125 IC102
 U 3 1 5EDD17CB
-P 950 6500
-F 0 "IC102" H 950 6817 50  0000 C CNN
-F 1 "74LS125" H 950 6726 50  0000 C CNN
-F 2 "" H 950 6500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 950 6500 50  0001 C CNN
-	3    950  6500
+P 10450 2950
+F 0 "IC102" H 10450 3267 50  0000 C CNN
+F 1 "74LS125" H 10450 3176 50  0000 C CNN
+F 2 "" H 10450 2950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 10450 2950 50  0001 C CNN
+	3    10450 2950
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS125 IC102
 U 4 1 5EDD2033
-P 1000 7200
-F 0 "IC102" H 1000 7517 50  0000 C CNN
-F 1 "74LS125" H 1000 7426 50  0000 C CNN
-F 2 "" H 1000 7200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 1000 7200 50  0001 C CNN
-	4    1000 7200
+P 10500 3650
+F 0 "IC102" H 10500 3967 50  0000 C CNN
+F 1 "74LS125" H 10500 3876 50  0000 C CNN
+F 2 "" H 10500 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 10500 3650 50  0001 C CNN
+	4    10500 3650
 	1    0    0    -1  
 $EndComp
-Text Label 550  5100 0    50   ~ 0
+Text Label 10050 1550 0    50   ~ 0
 XA16
 $Comp
 L 74xx:74LS74 IC103
@@ -340,10 +324,10 @@ XD0
 Wire Wire Line
 	2550 2800 2800 2800
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR077
 U 1 1 5EE186E3
 P 3100 2500
-F 0 "#PWR?" H 3100 2350 50  0001 C CNN
+F 0 "#PWR077" H 3100 2350 50  0001 C CNN
 F 1 "+5V" H 3115 2673 50  0000 C CNN
 F 2 "" H 3100 2500 50  0001 C CNN
 F 3 "" H 3100 2500 50  0001 C CNN
@@ -351,10 +335,10 @@ F 3 "" H 3100 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR078
 U 1 1 5EE1B6E1
 P 3100 3650
-F 0 "#PWR?" H 3100 3500 50  0001 C CNN
+F 0 "#PWR078" H 3100 3500 50  0001 C CNN
 F 1 "+5V" H 3115 3823 50  0000 C CNN
 F 2 "" H 3100 3650 50  0001 C CNN
 F 3 "" H 3100 3650 50  0001 C CNN
@@ -386,11 +370,11 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2050 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PCII-System-Board-Custom-Parts:DT14CB201 DELAYLINE
+L PCII-System-Board-Custom-Parts:DT14CB201 DELAYLINE1
 U 1 1 5EE3EE49
 P 6400 5750
-F 0 "DELAYLINE" H 6400 6531 50  0000 C CNN
-F 1 "DT14CB201" H 6400 6440 50  0000 C CNN
+F 0 "DELAYLINE1" H 6100 6350 50  0000 C CNN
+F 1 "DT14CB201" H 6700 6350 50  0000 C CNN
 F 2 "" H 6400 5750 50  0001 C CNN
 F 3 "" H 6400 5750 50  0001 C CNN
 	1    6400 5750
@@ -418,20 +402,20 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5EE9EC9C
-P 2250 5900
+P 2750 5900
 AR Path="/5EC54617/5EE9EC9C" Ref="#PWR?"  Part="1" 
-AR Path="/5ED7BC4B/5EE9EC9C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2250 5750 50  0001 C CNN
-F 1 "+5V" H 2265 6073 50  0000 C CNN
-F 2 "" H 2250 5900 50  0001 C CNN
-F 3 "" H 2250 5900 50  0001 C CNN
-	1    2250 5900
+AR Path="/5ED7BC4B/5EE9EC9C" Ref="#PWR076"  Part="1" 
+F 0 "#PWR076" H 2750 5750 50  0001 C CNN
+F 1 "+5V" H 2600 5950 50  0000 C CNN
+F 2 "" H 2750 5900 50  0001 C CNN
+F 3 "" H 2750 5900 50  0001 C CNN
+	1    2750 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2950 5800 2950 5900
 Wire Wire Line
-	2250 5900 2950 5900
+	2750 5900 2950 5900
 Connection ~ 2950 5900
 $Comp
 L 74xx:74LS04 IC?
@@ -446,8 +430,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3250 5000 50  0001 C CNN
 	1    3250 5000
 	1    0    0    -1  
 $EndComp
-Text Label 2500 5000 0    50   ~ 0
-~DACK0BRD~
 Wire Wire Line
 	2500 5000 2950 5000
 $Comp
@@ -495,8 +477,6 @@ Wire Wire Line
 Connection ~ 5400 3700
 Text Label 4200 4300 2    50   ~ 0
 DACK0BRD
-Text Label 7100 5550 2    50   ~ 0
-ADDRSEL
 Wire Wire Line
 	6700 5550 7100 5550
 $Comp
@@ -530,27 +510,23 @@ Text Label 3500 1600 0    50   ~ 0
 ~RAS~
 Wire Wire Line
 	3500 1600 4000 1600
-Text Label 2450 5600 0    50   ~ 0
-~XMEMR~
 Wire Wire Line
 	2450 5600 2950 5600
-Text Label 2450 5700 0    50   ~ 0
-~XMEMW~
 Wire Wire Line
-	2450 5700 2950 5700
+	2800 5700 2950 5700
 NoConn ~ 6700 5750
 NoConn ~ 6700 5850
 NoConn ~ 6700 5950
 Wire Wire Line
-	550  5100 750  5100
+	10050 1550 10250 1550
 Text Label 5150 3200 2    50   ~ 0
 PROM_Q3
 Wire Wire Line
 	5150 3200 4750 3200
-Text Label 1500 5350 2    50   ~ 0
+Text Label 11000 1800 2    50   ~ 0
 PROM_Q3
 Wire Wire Line
-	1050 5350 1500 5350
+	10550 1800 11000 1800
 Wire Wire Line
 	3100 3200 3100 3350
 Wire Wire Line
@@ -560,10 +536,10 @@ Wire Wire Line
 Wire Wire Line
 	2400 4350 3100 4350
 $Comp
-L power:GND #PWR?
+L power:GND #PWR081
 U 1 1 5F0F5686
 P 6400 2300
-F 0 "#PWR?" H 6400 2050 50  0001 C CNN
+F 0 "#PWR081" H 6400 2050 50  0001 C CNN
 F 1 "GND" H 6405 2127 50  0000 C CNN
 F 2 "" H 6400 2300 50  0001 C CNN
 F 3 "" H 6400 2300 50  0001 C CNN
@@ -617,15 +593,11 @@ NoConn ~ 6900 1650
 NoConn ~ 6900 1750
 NoConn ~ 6900 1850
 NoConn ~ 6900 1950
-Text Label 1100 4050 0    50   ~ 0
-~MEM_BANK_CS~
 Wire Wire Line
 	1100 4050 1750 4050
 Wire Wire Line
 	1100 4350 2400 4350
 Connection ~ 2400 4350
-Text Label 1100 4350 0    50   ~ 0
-~BUF_RESET~
 $Comp
 L 74xx:74LS04 IC?
 U 1 1 5F90FA13
@@ -639,27 +611,17 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5200 850 50  0001 C CNN
 	1    5200 850 
 	1    0    0    -1  
 $EndComp
-Text Label 6100 850  2    50   ~ 0
-~RAM_ADDR_CS~
 Wire Wire Line
-	5500 850  6100 850 
+	5500 850  5600 850 
 Wire Wire Line
 	4900 850  4850 850 
 Wire Wire Line
 	4850 850  4850 1750
 Connection ~ 4850 1750
-Wire Wire Line
-	3400 3950 3850 3950
-Text Label 3850 3950 2    50   ~ 0
-somewhere
-Text Label 300  7200 0    50   ~ 0
-something
-Wire Wire Line
-	300  7200 700  7200
-Text Label 550  5850 0    50   ~ 0
+Text Label 10050 2300 0    50   ~ 0
 XA17
 Wire Wire Line
-	550  5850 700  5850
+	10050 2300 10200 2300
 $Comp
 L 74xx:74LS04 IC8
 U 4 1 5EDD4081
@@ -674,12 +636,12 @@ $EndComp
 $Comp
 L 74xx:74LS04 IC8
 U 3 1 5EDDC76B
-P -50 6150
-F 0 "IC8" H -50 6467 50  0000 C CNN
-F 1 "74LS04" H -50 6376 50  0000 C CNN
-F 2 "" H -50 6150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -50 6150 50  0001 C CNN
-	3    -50  6150
+P 9450 2600
+F 0 "IC8" H 9450 2917 50  0000 C CNN
+F 1 "74LS04" H 9450 2826 50  0000 C CNN
+F 2 "" H 9450 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 9450 2600 50  0001 C CNN
+	3    9450 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -698,8 +660,8 @@ L power:+5V #PWR?
 U 1 1 5EDF29A7
 P 10000 4600
 AR Path="/5EC54617/5EDF29A7" Ref="#PWR?"  Part="1" 
-AR Path="/5ED7BC4B/5EDF29A7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10000 4450 50  0001 C CNN
+AR Path="/5ED7BC4B/5EDF29A7" Ref="#PWR083"  Part="1" 
+F 0 "#PWR083" H 10000 4450 50  0001 C CNN
 F 1 "+5V" H 10015 4773 50  0000 C CNN
 F 2 "" H 10000 4600 50  0001 C CNN
 F 3 "" H 10000 4600 50  0001 C CNN
@@ -712,9 +674,9 @@ Wire Wire Line
 	10150 5100 10150 4600
 Connection ~ 10150 4600
 Wire Wire Line
-	250  6150 1000 6150
+	9750 2600 10500 2600
 Wire Wire Line
-	1000 6150 1000 6100
+	10500 2600 10500 2550
 $Comp
 L 74xx:74LS04 IC8
 U 5 1 5EE28E44
@@ -744,14 +706,131 @@ Connection ~ 10150 5600
 Wire Wire Line
 	10150 5600 10150 6100
 Wire Wire Line
-	1050 5350 -450 5350
+	10550 1800 9050 1800
 Wire Wire Line
-	-450 5350 -450 6150
+	9050 1800 9050 2600
 Wire Wire Line
-	-450 6150 -350 6150
-Connection ~ 1050 5350
+	9050 2600 9150 2600
+Connection ~ 10550 1800
 NoConn ~ 10750 4600
 NoConn ~ 10750 5100
 NoConn ~ 10750 5600
 NoConn ~ 10750 6100
+Text GLabel 2450 5600 0    50   Input ~ 0
+~XMEMR~
+Text GLabel 2800 5700 0    50   Input ~ 0
+~XMEMW~
+Text GLabel 2500 5000 0    50   Input ~ 0
+~DACK0BRD~
+Text GLabel 1100 4350 0    50   Input ~ 0
+~BUF_RESET~
+Text GLabel 1100 4050 0    50   Input ~ 0
+~MEM_BANK_CS~
+Text GLabel 5600 850  2    50   Input ~ 0
+~RAM_ADDR_CS~
+$Comp
+L power:+5V #PWR0134
+U 1 1 612EC4C5
+P 6400 900
+F 0 "#PWR0134" H 6400 750 50  0001 C CNN
+F 1 "+5V" H 6415 1073 50  0000 C CNN
+F 2 "" H 6400 900 50  0001 C CNN
+F 3 "" H 6400 900 50  0001 C CNN
+	1    6400 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 950  6400 900 
+$Comp
+L power:+5V #PWR0133
+U 1 1 61302E79
+P 4450 2150
+F 0 "#PWR0133" H 4450 2000 50  0001 C CNN
+F 1 "+5V" H 4465 2323 50  0000 C CNN
+F 2 "" H 4450 2150 50  0001 C CNN
+F 3 "" H 4450 2150 50  0001 C CNN
+	1    4450 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2200 4450 2150
+$Comp
+L power:+5V #PWR0135
+U 1 1 6130A42D
+P 6400 5100
+F 0 "#PWR0135" H 6400 4950 50  0001 C CNN
+F 1 "+5V" H 6415 5273 50  0000 C CNN
+F 2 "" H 6400 5100 50  0001 C CNN
+F 3 "" H 6400 5100 50  0001 C CNN
+	1    6400 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5150 6400 5100
+$Comp
+L power:GND #PWR0136
+U 1 1 6131069D
+P 6400 6400
+F 0 "#PWR0136" H 6400 6150 50  0001 C CNN
+F 1 "GND" H 6405 6227 50  0000 C CNN
+F 2 "" H 6400 6400 50  0001 C CNN
+F 3 "" H 6400 6400 50  0001 C CNN
+	1    6400 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 6350 6400 6400
+NoConn ~ 3400 3000
+NoConn ~ 3400 4150
+Text GLabel 8450 2050 2    50   Output ~ 0
+~RAS0~
+Text GLabel 8450 2650 2    50   Output ~ 0
+~RAS1~
+Text GLabel 8450 3250 2    50   Output ~ 0
+~RAS2~
+Text GLabel 8450 3800 2    50   Output ~ 0
+~RAS3~
+Text GLabel 7100 5550 2    50   Output ~ 0
+ADDRSEL
+Text GLabel 1350 1700 0    50   3State ~ 0
+XD[0..1]
+Wire Bus Line
+	1350 1700 1500 1700
+Text GLabel 1350 1450 0    50   Input ~ 0
+BA[0..19]
+Wire Bus Line
+	1350 1450 1500 1450
+Text GLabel 7550 1250 2    50   Output ~ 0
+~CAS0~
+Text GLabel 7200 1350 2    50   Output ~ 0
+~CAS1~
+Text GLabel 7550 1450 2    50   Output ~ 0
+~CAS2~
+Text GLabel 7200 1550 2    50   Output ~ 0
+~CAS3~
+NoConn ~ 10750 2950
+NoConn ~ 10450 3200
+NoConn ~ 10150 2950
+NoConn ~ 10800 3650
+NoConn ~ 10200 3650
+NoConn ~ 10500 3900
+NoConn ~ 10800 2300
+NoConn ~ 10850 1550
+NoConn ~ 3400 3950
+Text Notes 3450 4100 0    50   ~ 0
+There appear to be no uses of this latch output.\nNo software sets this bit.
+Text Notes 650  2400 0    50   ~ 0
+PCII RAM Paging\nWith D0 = 0\n0x00000 - 0x9FFFF RAM Bank 0, 1 and bottom half of 2\nWith D0 = 1\n0x00000 - 0x1FFFF RAM Bank 0 (unchanged)\n0x20000 - 0x7FFFF RAM Bank 2 (top half) and Bank 3\n0x80000 - 0x9FFFF RAM Bank2 (bottom half) (unchanged)
+Text Notes 10050 1100 0    50   ~ 0
+PROM_Q3 is always 1\nOutputs have no traces
+Text GLabel 9750 1300 0    50   Input ~ 0
+XA[0..19]
+Entry Wire Line
+	9950 1450 10050 1550
+Entry Wire Line
+	9950 2200 10050 2300
+Wire Bus Line
+	9750 1300 9950 1300
+Wire Bus Line
+	9950 1300 9950 2200
 $EndSCHEMATC
