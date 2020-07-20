@@ -823,8 +823,8 @@ Text GLabel 6850 6100 2    50   Input ~ 0
 TIMER_CLOCK
 Text Label 5050 6600 0    50   ~ 0
 ~BUF_RESET~
-Text Notes 8850 6250 2    50   ~ 0
-TIMER_CLOCK = OSC / 12 (i.e. 666kHz or 397.7kHz)
+Text Notes 6850 6250 0    50   ~ 0
+TIMER_CLOCK = OSC / 12 1.193181667 MHz or 2 MHz
 Text GLabel 4250 800  0    50   Input ~ 0
 POWER_GOOD
 Wire Wire Line
@@ -958,4 +958,8 @@ Wire Wire Line
 	3050 4600 3050 5550
 Text Notes 9050 4200 0    50   ~ 0
 Delayed version of CPU_CLOCK\nMeasured to be approx. 64ns
+Text Notes 9350 1550 0    50   ~ 0
+CPU_CLOCK = 4.772 MHz or 8 MHz
+Text Notes 9350 2250 0    50   ~ 0
+OSC = 14.31818 MHz or 24 MHz
 $EndSCHEMATC
