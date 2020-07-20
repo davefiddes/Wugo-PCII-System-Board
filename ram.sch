@@ -6,9 +6,9 @@ encoding utf-8
 Sheet 3 16
 Title "Wugo PCII System Board"
 Date ""
-Rev ""
+Rev "1.0"
 Comp ""
-Comment1 ""
+Comment1 "Schematics Copyright (c) 2020 David J. Fiddes <D.J@fiddes.net>"
 Comment2 ""
 Comment3 ""
 Comment4 ""

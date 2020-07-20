@@ -6,9 +6,9 @@ encoding utf-8
 Sheet 16 16
 Title "Wugo PCII System Board"
 Date ""
-Rev ""
+Rev "1.0"
 Comp ""
-Comment1 ""
+Comment1 "Schematics Copyright (c) 2020 David J. Fiddes <D.J@fiddes.net>"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -237,7 +237,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 3350 4600 3350
 Text Notes 3450 1700 0    50   ~ 0
-IO Map\n0x0000-0x001F DMA\n0x0020-0x003F Interrupt Controller\n0x0040-0x005F Timer\n0x0060-0x007F Keyboard/Config PPI\n0x0080-0x009F DMA Page Register\n0x00A0-0x00BF NMI Enable\n0x00C0-0x00DF Something\n0x00E0-0x00FF Memory Bank Switch
+IO Map\n0x0000-0x001F DMA\n0x0020-0x003F Interrupt Controller\n0x0040-0x005F Timer\n0x0060-0x007F Keyboard/Config PPI\n0x0080-0x009F DMA Page Register\n0x00A0-0x00BF NMI Enable\n0x00C0-0x00DF Not used\n0x00E0-0x00FF Memory Bank Switch
 Wire Wire Line
 	5850 3450 5200 3450
 $Comp

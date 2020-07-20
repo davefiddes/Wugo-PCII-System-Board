@@ -3,12 +3,12 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 16
+Sheet 12 16
 Title "Wugo PCII System Board"
 Date ""
-Rev ""
+Rev "1.0"
 Comp ""
-Comment1 ""
+Comment1 "Schematics Copyright (c) 2020 David J. Fiddes <D.J@fiddes.net>"
 Comment2 ""
 Comment3 ""
 Comment4 ""
